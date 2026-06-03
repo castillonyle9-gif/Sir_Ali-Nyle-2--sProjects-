@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J's Gallery</title>
+    <style>
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #d3d3d3;
+        font-family: "Times New Roman", Times, serif;
+        color: #000;
+        font-size: 16px;
+      }
+
+      header {
+        text-align: center;
+        padding: 20px 10px 8px 10px;
+      }
+
+      header h1 {
+        font-size: 3em;
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      nav {
+        text-align: center;
+        padding: 8px 0 12px 0;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 0 50px;
+        color: #00008b;
+        text-decoration: underline;
+        font-size: 1em;
+      }
+
+      .intro {
+        overflow: hidden; 
+        padding: 12px 15px 0 15px;
+      }
+
+      .intro .cow-img {
+        float: right;
+        width: 48%;
+        height: 380px;
+        object-fit: cover;
+        margin-left: 15px;
+        display: block;
+      }
+
+      .intro p {
+        line-height: 1.65;
+        margin-bottom: 12px;
+        font-size: 1em;
+      }
+
+      .row-1 {
+        display: flex;
+        width: 100%;
+        height: 350px;
+        margin-top: 12px;
+      }
+
+      .row-1 video {
+        width: 60%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        background-color: #000;
+      }
+
+      .row-1 img {
+        width: 40%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+
+      .row-2 {
+        display: flex;
+        width: 100%;
+        height: 300px;
+      }
+
+      .row-2 img:first-child {
+        width: 40%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+
+      .row-2 img:last-child {
+        width: 60%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+
+      .row-3 {
+        display: flex;
+        width: 100%;
+        height: 300px;
+      }
+
+      .row-3 img:first-child {
+        width: 60%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+
+      .row-3 img:last-child {
+        width: 40%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>J's Gallery</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+      </nav>
+    </header>
+
+    <section class="intro">
+      <img
+        class="cow-img"
+        src="https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/21/shaggy.JPG"
+        alt="Highland cow standing in a rocky landscape"
+      />
+      <p>
+        Lorem ipsum odor amet, consectetuer adipiscing elit. Praesent mollis
+        adipiscing per id libero libero. Tempus pretium netus molestie
+        scelerisque facilisis tristique volutpat ultricies. Nostra ligula ac
+        pulvinar rutrum non rhoncus mauris facilisi. Quisque maximus commodo
+        sollicitudin, montes congue imperdiet. Est malesuada vivamus
+        vestibulum ante aenean class. Per integer aptent ullamcorper sagittis
+        posuere dignissim morbi scelerisque. Fringilla primis sagittis lorem
+        erat integer; vulputate nullam. Porta purus habitant id fermentum nec
+        ex, proin mauris sem.
+      </p>
+      <p>
+        Lectus ultrices nibh lobortis tempus facilisis sit conubia taciti.
+        Non torquent amet nibh elit ante fermentum praesent cras. Et
+        suspendisse egestas eros erat aptent sollicitudin. Nulla tortor purus
+        posuere auctor himenaeos malesuada. Turpis phasellus enim venenatis
+        aliquam pellentesque senectus, id ultrices. Praesent tellus consequat
+        phasellus cubilia mattis mauris natoque litora. Fringilla cursus
+        montes inceptos nec venenatis platea.
+      </p>
+    </section>
+
+    <section>
+
+      <div class="row-1">
+        <video controls>
+          <source src="https://cdn.pixabay.com/video/2023/11/05/188021-881528788_large.mp4" type="video/mp4" />
+        </video>
+        <img
+          src="https://images.unsplash.com/23/do-the-dew.JPG?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZvZyUyMG5pZ2h0fGVufDB8fDB8fHww"
+          alt="Foggy road at night with glowing street lights"
+        />
+      </div>
+
+      <div class="row-2">
+        <img
+          src="https://i.pinimg.com/custom_covers/200x150/446419450502101758_1437887779.jpg"
+          alt="Vintage film camera on a dark surface"
+        />
+        <img
+          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjIOYuRIVrv2V-0fyHZxS4mF_yOX2WhzUOryW5pSOIqVwjkqFA"
+          alt="Snow-covered mountain peaks with pine trees"
+        />
+      </div>
+
+      <div class="row-3">
+        <img
+          src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTk9jtmCHWB4zrPNrB5VTWzrJ4y_1IeSqzmtjNWw3cMMVq6-g_e"
+          alt="Mountain valley landscape at golden hour"
+        />
+        <img
+          src="https://istock.space/wp-content/uploads/2019/12/snow-150x150.jpg"
+          alt="Old stone building with a snow-covered car"
+        />
+      </div>
+
+    </section>
+
+  </body>
+</html>
